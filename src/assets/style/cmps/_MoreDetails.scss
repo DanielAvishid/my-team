@@ -1,0 +1,49 @@
+.more-details-container {
+    position: relative;
+    background-color: $clrSecondary3;
+    padding-block: rem(140px);
+
+    .more-details {
+        gap: 132px;
+    }
+
+    .bg-img {
+        position: absolute;
+        bottom: 0;
+        right: -100px;
+    }
+
+    .title-container {
+        min-width: rem(445px);
+    }
+
+    .line {
+        margin-block-end: rem(54px);
+    }
+
+    .icons-container {
+        margin-block-start: rem(54px);
+    }
+
+    .icon-img {
+        margin-inline-end: rem(32px);
+    }
+
+    .icon-container {
+        margin-block-end: rem(35px);
+    }
+
+    h2 {
+        max-width: rem(445px);
+        @include font($type: h2, $color: 'white')
+    }
+
+    h3 {
+        @include font($type: h3, $color: 'primary-1')
+    }
+
+    p {
+        opacity: 0.8;
+        @include font($type: body2, $color: 'white')
+    }
+}

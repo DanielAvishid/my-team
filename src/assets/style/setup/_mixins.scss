@@ -94,6 +94,10 @@
         color: $clrPrimary;
     }
 
+    @if $color =='primary-1' {
+        color: $clrPrimary-1;
+    }
+
     @if $color ==secondary {
         color: $clrSecondary;
     }

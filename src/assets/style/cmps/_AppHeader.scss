@@ -1,1 +1,24 @@
-// 
+.app-header-container {
+    background-color: $clrPrimary;
+    padding-block-start: rem(77px);
+
+    .app-header {
+        .logo {
+            margin-inline-end: rem(80px)
+        }
+
+        nav {
+            a {
+                color: $clrPrimary-2;
+                text-decoration: none;
+                font-family: Livvic;
+                font-weight: 100;
+            }
+        }
+
+        button {
+            @include primaryBtn()
+        }
+
+    }
+}

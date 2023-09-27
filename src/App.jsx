@@ -1,8 +1,12 @@
-import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import './assets/style/main.scss'
+import { AppHeader } from './cmps/AppHeader'
+import { Home } from './pages/Home'
 
 export function App() {
   return (
-    <h1>HI</h1>
+    <div className='main-layout'>
+      <AppHeader />
+      <Home />
+    </div>
   )
 }

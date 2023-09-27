@@ -1,1 +1,9 @@
-// 
+.testimonial-container {
+    background-color: $clrPrimary;
+    padding-block: rem(140px);
+
+    h2 {
+        text-align: center;
+        @include hTitle($type: h2, $color: 'white')
+    }
+}

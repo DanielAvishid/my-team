@@ -1,0 +1,19 @@
+// BASE
+@import 'setup/mixins';
+@import 'setup/functions';
+@import 'setup/variables';
+
+// SETUP
+@import 'base/base';
+@import 'base/layout';
+@import 'base/helpers';
+
+// CMPS
+@import 'cmps/AppFooter';
+@import 'cmps/AppHeader';
+@import 'cmps/ContactUs';
+@import 'cmps/Hero';
+@import 'cmps/Testimonial';
+
+// PAGES
+@import 'pages/Home';

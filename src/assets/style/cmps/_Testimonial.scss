@@ -1,9 +1,30 @@
 .testimonial-container {
+    text-align: center;
     background-color: $clrPrimary;
     padding-block: rem(140px);
 
     h2 {
-        text-align: center;
-        @include hTitle($type: h2, $color: 'white')
+        @include font($type: h2, $color: 'white');
+        margin-block-end: rem(52px)
+    }
+
+    h3 {
+        @include font($type: h3, $color: secondary)
+    }
+
+    p {
+        margin-block-start: rem(-36px);
+        margin-block-end: rem(28px);
+        width: rem(353px);
+        @include font($type: body2, $color: 'white')
+    }
+
+    span {
+        height: rem(18px);
+        font-size: 13px;
+        color: $clrPrimary-2;
+        font-family: Livvic;
+        font-weight: 500;
+        line-height: rem(18px);
     }
 }

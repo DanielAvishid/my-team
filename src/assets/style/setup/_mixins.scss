@@ -1,3 +1,5 @@
+/* Media queries Breakpoint mixins */
+
 @mixin for-narrow-layout {
     @media (min-width: $break-narrow) {
         @content;
@@ -19,4 +21,64 @@
 @mixin layoutGTC($max) {
     grid-template-columns:
         minmax($layoutPadding, 1fr) minmax(auto, $max) minmax($layoutPadding, 1fr);
+}
+
+// Buttons
+
+@mixin primaryBtn($type: light) {
+    cursor: pointer;
+    font-family: Livvic;
+    border-radius: 2em;
+    height: rem(48px);
+    min-width: rem(153px);
+    font-size: rem(18px);
+    font-weight: 600;
+    line-height: rem(28px);
+
+    @if ($type ==dark) {
+        background-color: $clrPrimary-2;
+        color: $clrPrimary;
+        border: 2px solid $clrPrimary;
+    }
+
+    @if ($type ==light) {
+        background-color: $clrPrimary;
+        color: $clrPrimary-2;
+        border: 2px solid $clrPrimary-2;
+    }
+}
+
+// Titles
+
+@mixin hTitle($type: none, $color: none) {
+
+    font-family: 'Livvic-Bold';
+
+    @if $type ==h1Large {
+        font-size: rem(100px);
+        line-height: rem(100px);
+    }
+
+    @if $type ==h1Small {
+        font-size: rem(64px);
+        line-height: rem(56px);
+    }
+
+    @if $type ==h2 {
+        font-size: rem(48px);
+        line-height: rem(48px);
+    }
+
+    @if $type ==h3 {
+        font-size: rem(18px);
+        line-height: rem(28px);
+    }
+
+    @if $color =='white' {
+        color: $clrPrimary-2;
+    }
+
+    @if $color ==primary {
+        color: $clrPrimary;
+    }
 }

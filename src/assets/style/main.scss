@@ -1,9 +1,10 @@
-// BASE
+// SETUP
 @import 'setup/mixins';
 @import 'setup/functions';
+@import 'setup/typography';
 @import 'setup/variables';
 
-// SETUP
+// BASE
 @import 'base/base';
 @import 'base/layout';
 @import 'base/helpers';

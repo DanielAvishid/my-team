@@ -50,7 +50,7 @@
 
 // Titles
 
-@mixin hTitle($type: none, $color: none) {
+@mixin font($type: none, $color: none) {
 
     font-family: 'Livvic-Bold';
 
@@ -74,11 +74,27 @@
         line-height: rem(28px);
     }
 
+    @if $type ==body1 {
+        font-family: Livvic;
+        font-size: rem(18px);
+        line-height: rem(28px);
+    }
+
+    @if $type ==body2 {
+        font-family: Livvic;
+        font-size: rem(15px);
+        line-height: rem(25px);
+    }
+
     @if $color =='white' {
         color: $clrPrimary-2;
     }
 
     @if $color ==primary {
         color: $clrPrimary;
+    }
+
+    @if $color ==secondary {
+        color: $clrSecondary;
     }
 }

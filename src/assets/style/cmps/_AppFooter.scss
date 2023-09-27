@@ -1,1 +1,12 @@
-// 
+.app-footer-container {
+    background-color: $clrSecondary4;
+
+    nav {
+        a {
+            color: $clrPrimary-2;
+            text-decoration: none;
+            font-family: Livvic;
+            font-weight: 100;
+        }
+    }
+}

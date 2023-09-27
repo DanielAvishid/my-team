@@ -1,1 +1,19 @@
-// 
+.contact-us-container {
+    position: relative;
+    background-color: $clrPrimary-1;
+    padding-block: rem(85px);
+
+    img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    h2 {
+        @include font($type: h2, $color: secondary3)
+    }
+
+    button {
+        @include primaryBtn($type: darker);
+    }
+}

@@ -35,13 +35,19 @@
     font-weight: 600;
     line-height: rem(28px);
 
-    @if ($type ==dark) {
+    @if $type ==dark {
         background-color: $clrPrimary-2;
         color: $clrPrimary;
         border: 2px solid $clrPrimary;
     }
 
-    @if ($type ==light) {
+    @if $type ==darker {
+        background-color: $clrPrimary-1;
+        color: $clrSecondary3;
+        border: 2px solid $clrSecondary3;
+    }
+
+    @if $type ==light {
         background-color: $clrPrimary;
         color: $clrPrimary-2;
         border: 2px solid $clrPrimary-2;
@@ -100,5 +106,9 @@
 
     @if $color ==secondary {
         color: $clrSecondary;
+    }
+
+    @if $color ==secondary3 {
+        color: $clrSecondary3;
     }
 }
